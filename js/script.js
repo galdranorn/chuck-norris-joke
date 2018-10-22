@@ -1,20 +1,26 @@
-var url = 'http://api.icndb.com/jokes/random';
+// links to html
 
-var button = document.getElementById('get-joke');
+const url = 'http://api.icndb.com/jokes/random';
+const button = document.getElementById('get-joke');
+const paragraph = document.querySelector('#joke');
+
+// event listener for get random joke button
 button.addEventListener('click', function(){
-  getJoke();
-});
+    getJoke();
+  });
 
-var paragraph = document.getElementById('joke');
-
+// get random joke function
 function getJoke() {
-    var xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.addEventListener('load', function(){
-      var response = JSON.parse(xhr.response);
+    // JSON parsed to JS object
+      let response = JSON.parse(xhr.response);
+    // getting to the joke in response
       paragraph.innerHTML = response.value.joke;
     });
     xhr.send();
   }
 
+// when page loads one random joke already on place
 getJoke();

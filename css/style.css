@@ -1,5 +1,6 @@
 .container {
-  width: 60%;
+  font-family: Montserrat;
+  width: 50%;
   text-align: center;
   margin: 0 auto;
   padding: 20px;
@@ -12,5 +13,21 @@
 
 .container button {
   margin: 20px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.container button:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
