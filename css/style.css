@@ -1,33 +1,9 @@
-.container {
-  font-family: Montserrat;
-  width: 50%;
-  text-align: center;
-  margin: 0 auto;
-  padding: 20px;
-}
+.container { font-family: Montserrat; width: 50%; text-align: center; margin: 0 auto; padding: 20px; }
 
-.container img {
-  width: 200px;
-  border-radius: 50%;
-}
+.container img { width: 200px; border-radius: 50%; }
 
-.container button {
-  margin: 20px;
-  background: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px;
-}
+.container button { margin: 20px; background: white; border: 1px solid black; border-radius: 5px; padding: 10px; }
 
-.container button:hover {
-  cursor: pointer;
-  background: black;
-  color: white;
-}
+.container button:hover { cursor: pointer; background: black; color: white; }
 
-@media (max-width: 700px) {
-  .container {
-    width: 90%;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 700px) { .container { width: 90%; } }
